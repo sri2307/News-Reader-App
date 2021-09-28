@@ -49,7 +49,7 @@ const App = () => {
       <div className={classes.logoContainer}>
         {newsArticles.length ? (
           <div className={classes.infoContainer}>
-            <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Open article number [4]</Typography></div>
+            <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Open article number [1/2/3/4]</Typography></div>
             <div className={classes.card}><Typography variant="h5" component="h2">Try saying: <br /><br />Go back</Typography></div>
           </div>
         ) : null}
@@ -60,9 +60,9 @@ const App = () => {
       {!newsArticles.length ? (
         <div className={classes.footer}>
          
-          <img className={classes.image} src={git} height="50px" alt="Sri logo" />
-          <img className={classes.image} src={ld} height="50px" alt="Linkedin logo" />
-          <img className={classes.image} src={twitter} height="50px" alt="Sri logo" />
+          <a href="https://github.com/sri2307"><img className={classes.image} src={git} height="50px" alt="Sri logo" /></a>
+          <a href='https://www.linkedin.com/in/srikanth-marrapu-0baa66111/' ><img className={classes.image} src={ld} height="50px" alt="Linkedin logo" /></a>
+          <a href="https://twitter.com/srikanthsri2307"><img className={classes.image} src={twitter} height="50px" alt="Sri logo" /></a>
         </div>
       ) : null}
     </div>
